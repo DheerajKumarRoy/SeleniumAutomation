@@ -23,8 +23,8 @@ def login():
     if not exists("cookies.pkl"):
         driver.get("https://www.linkedin.com/login")
         time.sleep(2)
-        username = "dheerajroy8855@gmail.com"
-        password = "263160@Dk"
+        username = "your username"
+        password = "your password"
         driver.find_element("xpath", "//input[@name='session_key']").send_keys(username)
         driver.find_element("xpath", "//input[@name='session_password']").send_keys(password)
         time.sleep(2)
